@@ -1,4 +1,10 @@
-#!/bin/bash
+Web oack error fix:
+
+1. type the following command on the terminal:
+
+export NODE_OPTIONS=--openssl-legacy-provider
+
+2. openthe bin/server file (inside the bin/ folder) and replace its contents with this:
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 parentdir="$(dirname "$DIR")"
